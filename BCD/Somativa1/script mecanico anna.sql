@@ -1,5 +1,7 @@
 CREATE DATABASE Script_Anna_oficina;
 USE Script_Anna_oficina;
+show schemas;
+show tables;
 CREATE TABLE IF NOT EXISTS clientes (
 ID_CLIENTE INT AUTO_INCREMENT PRIMARY KEY,
 CPF VARCHAR (14) NOT NULL UNIQUE,
@@ -102,7 +104,7 @@ data varchar (60) not null,
 preco int not null,
 forma_pagamento varchar (20) not null
 );
-
+describe servicos;
 create table fornecedores (
 id_fornecedores int auto_increment primary key,
 telefone int not null,
